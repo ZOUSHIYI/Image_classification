@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>识别中心</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h2>上传图像或视频进行识别</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*,video/*" required>
+        <input type="submit" value="识别">
+    </form>
+    <a href="/logout">退出登录</a>
+</body>
+</html>

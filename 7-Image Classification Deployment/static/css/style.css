@@ -1,0 +1,153 @@
+/* 全局样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 40px;
+    background-image: url('E:/Image classification/test_img/大象1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    animation: fadeIn 1s ease; /* 添加淡入动画 */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* 标题样式 */
+h1, h2 {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease; /* 添加缩放动画 */
+}
+
+h1:hover, h2:hover {
+    transform: scale(1.05);
+}
+
+/* 表单样式 */
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    transition: box-shadow 0.3s ease; /* 添加阴影动画 */
+}
+
+form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input[type="text"], input[type="password"], input[type="file"] {
+    margin: 8px 0 20px 0;
+    padding: 15px;
+    width: calc(100% - 30px);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* 添加边框颜色动画 */
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 15px 35px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 添加背景颜色和缩放动画 */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* 链接样式 */
+a {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 35px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 添加背景颜色和缩放动画 */
+}
+
+a:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* 图片样式 */
+img {
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* 添加缩放动画 */
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* 识别结果部分样式 */
+.result-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 650px;
+    transition: box-shadow 0.3s ease; /* 添加阴影动画 */
+}
+
+.result-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.result-text {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+}

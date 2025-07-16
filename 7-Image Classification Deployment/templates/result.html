@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>识别结果</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="result-container">
+        <h2>识别结果：</h2>
+        <p class="result-text">{{ result }}</p>
+        <img src="{{ file_url }}" alt="Uploaded file">
+        <div>
+            <a href="/dashboard">继续识别</a> 
+            <a href="/">返回首页</a>
+        </div>
+    </div>
+</body>
+</html>
