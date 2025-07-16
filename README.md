@@ -1,3 +1,7 @@
+## 这是我的实训小学期作业，参考了同济子豪兄的水果图像分类
+
+
+
 ## 1-Build a dataset--构建数据集
 【A】Image acquisition：自动爬取指定关键词（如“兔子”“熊猫”等）对应的图片，并下载保存。
 【B】Statistical image information：对图像数据集中的所有图片尺寸进行统计分析，并绘制图像尺寸的密度分布图。
